@@ -1,29 +1,108 @@
-
-<!doctype HTML>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Student Bio</title>
+ 	<meta charset="UTF-8">
+  	<title>Weather Analysis</title>
+  	<!-- Bring in our bootstrap stylesheet -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- Reset style sheet -> reset the styling of all HTML elements to a consistent baseline -->
+	<link rel="stylesheet" href="reset.css">
+	<!-- Landing page style sheet -->
+  	<link rel="stylesheet" href="style.css">
+
+  
 </head>
+<body >
+ 	<nav class="navbar navbar-default">
+    	<div class="container">
+      	
+      	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+       		</button>
+        	<a class="navbar-brand" id="border-temp" href="index.html">Latitude</a>
+      	</div> 
 
+      	
+      	<div class="collapse navbar-collapse" id="nav-select">
+  	    	<ul class="nav navbar-nav navbar-right">
+          		<li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            		<ul class="dropdown-menu">
+              			<li><a href="temp.html">Max Temperature</a></li>
+              			<li><a href="humidity.html">Humidity</a></li>
+              			<li><a href="cloudiness.html">Cloudiness</a></li>
+              			<li><a href="windspeed.html">Wind Speed</a></li>
+            		</ul>
+          		</li>
+          		<li><a href="Comparison.html">Comparison</a></li>
+          		<li><a href="WeatherData.html">Data</a></li>
+        	</ul>
+      </div>
+    </nav>
+ 
 
-<Body>
+	<div class="container"> 
+		<div class="row">
+        	<div class="col-md-7" >
 
-	<H1> Sujata Vithala></H1>
-	<img src = "C:\Users\sujat\Bootcamp\Html/rose.png" alt="Sujata">
+            <h1 class="header-line">Summary: Latitude vs. Weather Parameters</h1>
+                <figure> 
+                    <img class= "img-responsive" style = "float: left; margin: 0 20px 20px 0; width: 300px;  height: 200px;" src= "Temp.png" alt = "Latitude vs Temperature" >
+                </figure>  
+          
+                <p style ="text-align: justify;color: grey; font-weight: solid"> The purpose of this project was to analyze how weather changes as you get closer to the equator.To accomplish this analysis we first pulled data from the Open Weather Map API, to  assemble data on over 500 cities. </p>
+                <BR>
+                <BR>
+                <BR>                 
 
-	<p> I am a data analyst</p>
-	<P> I am doing python bootcamp</P>
+                <p style = "color: grey; font-weight: solid">After asssembling the dataset, we used matplotlib to plot various aspects of the Weather vs Latitude. Factors we looked into included temperature, cloudiness, wind Speed and humidity.This site provides source data and visualization created as part of the analysis as well as explainations and descriptions of any trends and correaltions witnessed</p>
+				   
+        	</div>
 
-	<ul>
-		<li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
-    	<li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a></li>
-    	<li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-  	</ul>
+			   <div class="col-md-5">
+				  <h1 class="header-line">Visualizations</h1>
+        		<div class="row">
+        			<div class="col-md-6">
+        	   			<figure>
+               				<a href="Temp.html">
+               				<img class = "img-responsive" src= "temp.png" alt = "Latitude vs Temperature"></a> 
+            			</figure> 
+          			</div>  
+          
+          			<div class="col-md-6">       
+            			<figure>
+               				<a href="Humidity.html">
+               				<img class = "img-responsive" src= "humidity.png" alt = "Latitude vs Humidity"></a> 
+            			</figure>
+          			</div> 
+        		</div>  
+				<br><br>
+				<div class="row">
+     				<div class = "col-md-6"> 
+            			<figure>
+            				<a href="Cloudiness.html">
+            				<img class = "img-responsive" src= "cloudiness.png" alt = "Latitude vs Cloudiness"></a> 
+            			</figure> 
+          			</div> 
+          		
+          			<div class="col-md-6"> 
+            			<figure>
+            				<a href="Windspeed.html">
+                			<img class = "img-responsive" src= "windSpeed.png" alt = "Latitude vs Windspeed"></a> 
+            			</figure>  
+        			</div> 
+    			</div> 
+  			</div>
+       	</div> 
+  	</div> 
 
+</body>
+</html>
 
-
-</Body>
-
-</head>

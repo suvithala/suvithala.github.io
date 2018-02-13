@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Maximum Temperature</title>
+  
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Reset style sheet -> reset the styling of all HTML elements to a consistent baseline -->
+  <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+        <a class="navbar-brand" id="border-temp" href="index.html">Latitude</a>
+      </div> <!-- div class="navbar-header" -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="nav-select">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Temp.html">Temperature</a></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li><a href="Windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="Comparison.html">Comparison</a></li>
+          <li><a href="WeatherData.html">Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-6" >
+        <h1 class="header-line">Summary: Latitude vs. Cloudiness</h1>
+        <figure> 
+          <img class="img-responsive" src= "cloudiness.png" alt = "Latitude vs Cloudiness" height=400 width=500>
+        </figure>  
+         
+        <p class="p-margin">There is no strong relationship between latitude and cloudiness, however, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.</p>
+      </div> 
+      <div class="col-md-2" >
+      </div> 
+      <div class="col-md-4">
+        <h1 class="header-line">Visualizations</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <figure>
+                <a href="Temp.html">
+                <img class = "img-responsive" src= "temp.png" alt = "Latitude vs Temperature"></a> 
+             </figure> 
+            </div>  
+          
+            <div class="col-md-6">       
+              <figure>
+                <a href="Humidity.html">
+                <img class = "img-responsive" src= "humidity.png" alt = "Latitude vs Humidity"></a> 
+              </figure>
+            </div> 
+          </div>  
+          <br><br>
+          <div class="row">
+            <div class = "col-md-6"> 
+              <figure class = "fig-blue-border">
+                <a href="Cloudiness.html">
+                <img class = "img-responsive" src= "cloudiness.png" alt = "Latitude vs Cloudiness"></a> 
+              </figure> 
+            </div> 
+            <div class="col-md-6"> 
+              <figure>
+                <a href="Windspeed.html">
+                <img class = "img-responsive" src= "windSpeed.png" alt = "Latitude vs Windspeed"></a> 
+              </figure>  
+            </div> 
+        </div> 
+      </div>
+    </div> 
+  </div> 
+
+  
+</body>
+
+</html>
