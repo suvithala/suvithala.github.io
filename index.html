@@ -5,21 +5,21 @@
  	<meta charset="UTF-8">
   	<title>Weather Analysis</title>
   	<!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="reset.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	<!-- Reset style sheet -> reset the styling of all HTML elements to a consistent baseline -->
-	<link rel="stylesheet" href="reset.css">
+	
 	<!-- Landing page style sheet -->
   	<link rel="stylesheet" href="style.css">
 
   
 </head>
 <body >
- 	<nav class="navbar navbar-default">
-    	<div class="container">
-      	
-      	<div class="navbar-header">
+ 	<!--<nav class="navbar navbar-expand-lg navbar-default">
+    	<div class="container-fluid">
+       	<div class="navbar-header">
         	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         		<span class="sr-only">Toggle navigation</span>
         		<span class="icon-bar"></span>
@@ -30,24 +30,81 @@
       	</div> 
 
       	
-      	<div class="collapse navbar-collapse" id="nav-select">
+      	<div class="collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
   	    	<ul class="nav navbar-nav navbar-right">
-          		<li class="dropdown">
-            	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+          	<li class="dropdown">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Plots 
+                <span class="caret"></span>
+              </a>
             		<ul class="dropdown-menu">
               			<li><a href="temp.html">Max Temperature</a></li>
               			<li><a href="humidity.html">Humidity</a></li>
               			<li><a href="cloudiness.html">Cloudiness</a></li>
               			<li><a href="windspeed.html">Wind Speed</a></li>
             		</ul>
-          		</li>
-          		<li><a href="comparison.html">Comparison</a></li>
-          		<li><a href="weatherdata.html">Data</a></li>
+          	</li>
+          	<li><a href="comparison.html">Comparison</a></li>
+          	<li><a href="weatherdata.html">Data</a></li>
         	</ul>
         </div>
-      <div class="clearfix"></div>
-    </nav>
+     
+    </nav>-->
  
+  <!-- Create a Default Navigation Bar -->  
+<!-- Expand Nav bar at lg and shrink at sm -->
+  <nav class="navbar navbar-expand-lg navbar-default">
+<!-- Place everything in container fluid  -->   
+  <div class="container-fluid">
+<!-- Create a Navigation bar header for logo/header text -->
+    <div class="navbar-header" >
+<!-- Create text or image for brand in the header -->
+       <h2><a href="index.html" class="navbar-brand" id="border-temp">Latitude</a>
+       </h2>
+<!-- Add a toggle button to appear at sm for a shrunken navbar -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<!-- Close Navigation bar header class -->
+      </div>
+<!-- Create a list of link for right side of navigation bar -->
+      <ul class="nav navbar-nav navbar-right">
+<!-- Create a drop-down -->
+        <li class="dropdown">
+<!-- Add a hyperlink functionality to drop-down to be clickable -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plots
+          <span class="caret"></span>
+<!-- Create a drop-down menu -->
+          <ul class="dropdown-menu" aria-labelledby="dropdown1">
+<!-- Add options to drop-down menu -->
+            <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="windspeed.html">Wind Speed</a></li>
+<!-- Close drop-down menu list -->
+           </ul> 
+<!-- Close drop-down -->
+        </li>
+<!-- Rest of the links on the nav bar -->
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="weatherdata.html">Data</a></li>
+<!-- Close navigation bar list -->
+      </ul>
+<!-- Close Container fluid -->
+  </div>
+<!-- Close Navigation bar -->
+  </nav>
+
+
+
+
+
+
+
+
+
 
 	<div class="container"> 
 		<div class="row">

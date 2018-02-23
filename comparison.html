@@ -3,50 +3,47 @@
 
 <head>
   <meta charset="UTF-8">
-    <title>Weather Analysis</title>
+    <title>Comparision Analysis</title>
+        <!-- Reset style sheet -> reset the styling of all HTML elements to a consistent baseline -->
+    <link rel="stylesheet" href="reset.css">
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Reset style sheet -> reset the styling of all HTML elements to a consistent baseline -->
-  <link rel="stylesheet" href="reset.css">
+
   <!-- Landing page style sheet -->
     <link rel="stylesheet" href="style.css">
 
   
 </head>
 <body >
-  <nav class="navbar navbar-default">
-      <div class="container">
-        
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" id="border-temp" href="index.html">Latitude</a>
-        </div> 
-
-        
-        <div class="collapse navbar-collapse" id="nav-select">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="temp.html">Max Temperature</a></li>
-                    <li><a href="humidity.html">Humidity</a></li>
-                    <li><a href="cloudiness.html">Cloudiness</a></li>
-                    <li><a href="windspeed.html">Wind Speed</a></li>
-                </ul>
-              </li>
-              <li><a href="comparison.html">Comparison</a></li>
-              <li><a href="weatherdata.html">Data</a></li>
-          </ul>
-      </div>
-      <div class="clearfix"></div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <h2><a href="index.html" class="navbar-brand" id="border-temp">Latitude</a>
+      </h2>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span>
+          <ul class="dropdown-menu" aria-labelledby="dropdown1">
+            <li><a href="temp.html">Max Temperature</a></li>
+            <li><a href="humidity.html">Humidity</a></li>
+            <li><a href="cloudiness.html">Cloudiness</a></li>
+            <li><a href="windspeed.html">Wind Speed</a></li>
+          </ul> 
+      </li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="weatherdata.html">Data</a></li>
+    </ul>
+  </div>
+</nav>
  
   <div class="container well">
   

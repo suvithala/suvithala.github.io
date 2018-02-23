@@ -54,27 +54,5 @@ h1 {
 .fig-blue-border	{
 	border: 1.5px solid #00CED1;
 }
-/*
-#nav-select {
-    visibility: hidden;
-}
 
-#nav-select {
-    visibility: visible;
-}
-#nav-select {
-    visibility: hidden;
-}*/
 
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
-@media (max-width: 480px) {
- 
-
-  .navbar ul {
-    visibility: hidden;
-  }
-
-  #nav-select {
-    visibility: visible;
-  }
-}
